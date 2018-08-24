@@ -16,24 +16,24 @@ Make sure that you have below free/open source softwares installed
 
 * Signup for Salesforce DX trial edition https://developer.salesforce.com/promotions/orgs/dx-signup
     * Authenticate SFDC CLI against DX login
-    ``` 
-    sfdx force:auth:web:login -d -a DevHub
-    ```
+        ``` 
+        sfdx force:auth:web:login -d -a DevHub
+        ```
 
 * Clone Github repository
-``` 
-git clone https://github.com/victorabraham/Lightning-DX.git
-```
+    ``` 
+    git clone https://github.com/victorabraham/Lightning-DX.git
+    ```
 
 * Navigate to the folder 
-``` 
-cd Lightning-DX
-```
+    ``` 
+    cd Lightning-DX
+    ```
 
 * Create a scratch org with this codebase 
-``` 
-sfdx force:org:create -s -f config/project-scratch-def.json -a LightningDX
-```
+    ``` 
+    sfdx force:org:create -s -f config/project-scratch-def.json -a LightningDX
+    ```
 
 ## Deploying Updates to code
 
