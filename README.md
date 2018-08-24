@@ -4,21 +4,17 @@ Training materials for lightning training. SFDX will be used for development.
 
 ## Initial Setup
 
-    Make sure that you have below free/open source softwares installed
+Make sure that you have below free/open source softwares installed
 
-Git
-https://git-scm.com/downloads
 
-SFDX CLI
-https://developer.salesforce.com/tools/sfdxcli
+* Git https://git-scm.com/downloads
 
-VS Code
-https://code.visualstudio.com/download
-Install Salesforce extensions
-https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode
+* SFDX CLI https://developer.salesforce.com/tools/sfdxcli
 
-SIGNUP for Salesforce DX trial edition
-https://developer.salesforce.com/promotions/orgs/dx-signup
+* VS Code https://code.visualstudio.com/download
+    * Install Salesforce extensions https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode
+
+* SIGNUP for Salesforce DX trial edition https://developer.salesforce.com/promotions/orgs/dx-signup
 
 
 Clone the repository
