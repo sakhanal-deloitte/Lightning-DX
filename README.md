@@ -15,7 +15,7 @@ Make sure that you have below free/open source softwares installed
     * Install Salesforce extensions https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode
 
 * Signup for Salesforce DX trial edition https://developer.salesforce.com/promotions/orgs/dx-signup
-    * Authenticate SFDC CLI against DX login
+    * Authenticate SFDX CLI using DX trial edition login
         ``` 
         sfdx force:auth:web:login -d -a DevHub
         ```
@@ -34,6 +34,13 @@ Make sure that you have below free/open source softwares installed
     ``` 
     sfdx force:org:create -s -f config/project-scratch-def.json -a LightningDX
     ```
+## Discarding local changes
+
+Open terminal/command prompt and navigate to Lightning-DX folder and run below commands
+``` 
+git clean -fd
+git checkout -f
+```
 
 ## Deploying Updates to code
 
