@@ -1,0 +1,44 @@
+<aura:component>
+	<aura:attribute name="showProfileModal" type="Boolean" default="false" />
+	<div>
+		<lightning:layout class="nav-bar">
+			<lightning:layoutItem size="12">
+				<lightning:layout horizontalAlign="spread">
+					<lightning:layoutItem size="12" mediumDeviceSize="2"></lightning:layoutItem>
+					<lightning:layoutItem size="6" mediumDeviceSize="4" class="brand">
+						<h1 class="brand-title">Lightning Bootcamp</h1>
+					</lightning:layoutItem>
+					<lightning:layoutItem size="6" mediumDeviceSize="4">
+						<nav class="slds-context-bar__secondary" role="navigation">
+							<ul class="slds-grid">
+								<li class="slds-context-bar__item slds-is-active">
+									<a href="javascript:void(0);" class="slds-context-bar__label-action" title="Home">
+										<span class="slds-assistive-text">Current Page:</span>
+										<span class="slds-truncate" title="Home">Home</span>
+									</a>
+								</li>
+								<li class="slds-context-bar__item">
+									<a href="javascript:void(0);" class="slds-context-bar__label-action" title="About">
+										<span class="slds-truncate" title="About">About</span>
+									</a>
+								</li>
+								<li class="slds-context-bar__item">
+									<a href="javascript:void(0);" class="slds-context-bar__label-action" title="Contact">
+										<span class="slds-truncate" title="Contact">Contact</span>
+									</a>
+								</li>
+								<li class="slds-context-bar__item">
+									<lightning:button label="Create Profile" class="btn-create-profile" onclick="{!c.createProfile}" />
+								</li>
+							</ul>
+						</nav>
+					</lightning:layoutItem>
+					<lightning:layoutItem size="12" mediumDeviceSize="2"></lightning:layoutItem>
+				</lightning:layout>
+			</lightning:layoutItem>
+		</lightning:layout>
+		<aura:if isTrue="{!v.showProfileModal}">
+			<c:NewProfileModal/>
+		</aura:if>
+	</div>
+</aura:component>	
